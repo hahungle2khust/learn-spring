@@ -1,10 +1,10 @@
-package com.hungle.mbf.logindemo;
+package com.hungle.mbf.learnspring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LoginDemoApplicationTests {
+class LearnSpringApplicationTests {
 
     @Test
     void contextLoads() {

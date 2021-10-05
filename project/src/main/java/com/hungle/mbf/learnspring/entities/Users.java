@@ -1,4 +1,4 @@
-package com.hungle.mbf.logindemo.entities;
+package com.hungle.mbf.learnspring.entities;
 
 import javax.persistence.*;
 
