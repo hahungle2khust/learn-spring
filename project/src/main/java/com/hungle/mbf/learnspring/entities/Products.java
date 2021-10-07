@@ -17,10 +17,8 @@ public class Products {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer pId;
 
-    @Column(nullable = false)
     private String pName;
 
-    @Column(nullable = false)
     private float pPrice;
 
     private String productImg;
