@@ -10,5 +10,5 @@ public interface ProductService {
     public List<Products> getAllProducts();
     public void saveProduct(Products products);
     public Products findProductById(Integer pId);
-    public void deleteProduct(Integer pId);
+    public Products deleteProduct(Integer pId);
 }

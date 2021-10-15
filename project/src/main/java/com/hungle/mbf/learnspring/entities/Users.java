@@ -15,17 +15,17 @@ public class Users {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // tự động tăng giá trị id bảng trong database
-    private Integer id;
+    private Integer uid;
 
     @Column(nullable = false, unique = true)
     private String username;
 
     @Column(nullable = false)
-    private String firstName;
+    private String firstname;
 
     @Column(nullable = false)
-    private String lastName;
+    private String lastname;
 
     @Column(nullable = false, length = 64)
-    private String passWd;
+    private String passwd;
 }

@@ -14,7 +14,7 @@ import java.util.List;
 //localhost:1103/api/public/users
 public class UserController {
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @GetMapping("")
     public List<Users> findAllUsers() {

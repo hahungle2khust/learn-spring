@@ -15,11 +15,13 @@ public class Products {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer pId;
+    private Integer pid;
 
-    private String pName;
+    @Column(nullable = false)
+    private String pname;
 
-    private float pPrice;
+    @Column(nullable = false)
+    private float pprice;
 
-    private String productImg;
+    private String productimg;
 }
