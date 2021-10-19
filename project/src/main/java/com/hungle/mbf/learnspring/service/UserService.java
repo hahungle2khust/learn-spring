@@ -1,11 +1,12 @@
 package com.hungle.mbf.learnspring.service;
 
 import com.hungle.mbf.learnspring.entities.Users;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
 public interface UserService {
     public List<Users> getListUsers();
+    public void saveUser(Users user);
+    public Users getUserById(Integer uid);
+    public Users deleteUser(Integer uid);
 }
