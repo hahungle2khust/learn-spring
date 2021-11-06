@@ -2,6 +2,8 @@ package com.hungle.mbf.learnspring.controller;
 
 import com.hungle.mbf.learnspring.entities.Products;
 import com.hungle.mbf.learnspring.service.ProductService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,11 +14,14 @@ import java.util.NoSuchElementException;
 
 @RestController
 @RequestMapping("api/public/products")
+//@CrossOrigin(origins = "**")
 //localhost:1103/api/public/products
 public class ProductController {
 
     @Autowired
     private ProductService productService;
+
+    public static final Logger logger = LoggerFactory.getLogger(ProductController.class);
 
     @GetMapping("")
     public List<Products> findAll() {
@@ -26,6 +31,7 @@ public class ProductController {
     @GetMapping("/{pid}")
     public ResponseEntity<Products> getProductById(@PathVariable Integer pid) {
         try {
+            logger.info("INFO: "+ pid);
             Products products = productService.findProductById(pid);
             return new ResponseEntity<Products>(products, HttpStatus.OK);
         } catch (NoSuchElementException e) {
@@ -41,6 +47,8 @@ public class ProductController {
     @PutMapping("/{pid}")
     public ResponseEntity<Products> updateProduct(@RequestBody Products products, @PathVariable Integer pid) {
         try {
+            //Đánh dấu log
+            logger.info("BODY: "+ products.toString());
             Products existingProduct = productService.findProductById(pid);
             productService.saveProduct(products);
             return new ResponseEntity<Products>(HttpStatus.OK);
@@ -52,6 +60,7 @@ public class ProductController {
     @DeleteMapping("/{pid}")
     public ResponseEntity<Products> deleteExistingProduct(@PathVariable Integer pid) {
         try {
+            logger.info("PARAM:"+pid);
             Products existingProduct = productService.findProductById(pid);
             productService.deleteProduct(pid);
             return new ResponseEntity<Products>(HttpStatus.OK);
@@ -59,4 +68,5 @@ public class ProductController {
             return new ResponseEntity<Products>(HttpStatus.valueOf(404));
         }
     }
+
 }

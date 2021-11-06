@@ -24,4 +24,5 @@ public class Products {
     private float pprice;
 
     private String productimg;
+
 }

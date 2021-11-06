@@ -1,0 +1,73 @@
+06-11-2021 10:42:25.850 [restartedMain] INFO  c.h.m.l.LearnSpringApplication.logStarting - Starting LearnSpringApplication using Java 15.0.2 on HungLe with PID 16036 (D:\Mobifone\Spring boot\learn-spring\project\target\classes started by hung2 in D:\Mobifone\Spring boot\learn-spring\project)
+06-11-2021 10:42:25.850 [restartedMain] INFO  c.h.m.l.LearnSpringApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+06-11-2021 10:42:25.910 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+06-11-2021 10:42:25.910 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+06-11-2021 10:42:26.722 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-11-2021 10:42:26.765 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 44 ms. Found 2 JPA repository interfaces.
+06-11-2021 10:42:27.272 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 1103 (http)
+06-11-2021 10:42:27.272 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-1103"]
+06-11-2021 10:42:27.272 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+06-11-2021 10:42:27.272 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.53]
+06-11-2021 10:42:27.398 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+06-11-2021 10:42:27.398 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1488 ms
+06-11-2021 10:42:27.430 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+06-11-2021 10:42:27.822 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+06-11-2021 10:42:27.837 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/projectdb'
+06-11-2021 10:42:27.962 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+06-11-2021 10:42:28.040 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.32.Final
+06-11-2021 10:42:28.181 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06-11-2021 10:42:28.259 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+06-11-2021 10:42:28.715 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-11-2021 10:42:28.715 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-11-2021 10:42:28.762 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-11-2021 10:42:29.258 [restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: b02b6a0e-b0b8-4557-8db1-fd1d57f5198f
+
+06-11-2021 10:42:29.323 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-11-2021 10:42:29.400 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44ae6ae0, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e48690, org.springframework.security.web.header.HeaderWriterFilter@1035d6fc, org.springframework.web.filter.CorsFilter@2dd00b8d, org.springframework.security.web.authentication.logout.LogoutFilter@7bdc773c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1159dcf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d0322e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47383eb, org.springframework.security.web.session.SessionManagementFilter@6c655b19, org.springframework.security.web.access.ExceptionTranslationFilter@237c1056]
+06-11-2021 10:42:29.510 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+06-11-2021 10:42:29.619 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-1103"]
+06-11-2021 10:42:29.650 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 1103 (http) with context path ''
+06-11-2021 10:42:29.650 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+06-11-2021 10:42:29.671 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+06-11-2021 10:42:29.729 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+06-11-2021 10:42:29.885 [restartedMain] INFO  c.h.m.l.LearnSpringApplication.logStarted - Started LearnSpringApplication in 6.076 seconds (JVM running for 7.281)
+06-11-2021 11:10:25.386 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+06-11-2021 11:10:25.841 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown initiated...
+06-11-2021 11:10:25.934 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close - HikariPool-1 - Shutdown completed.
+06-11-2021 11:10:32.619 [restartedMain] INFO  c.h.m.l.LearnSpringApplication.logStarting - Starting LearnSpringApplication using Java 15.0.2 on HungLe with PID 17756 (D:\Mobifone\Spring boot\learn-spring\project\target\classes started by hung2 in D:\Mobifone\Spring boot\learn-spring\project)
+06-11-2021 11:10:32.635 [restartedMain] INFO  c.h.m.l.LearnSpringApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+06-11-2021 11:10:32.666 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+06-11-2021 11:10:32.666 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+06-11-2021 11:10:33.643 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+06-11-2021 11:10:33.690 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 46 ms. Found 2 JPA repository interfaces.
+06-11-2021 11:10:34.222 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 1103 (http)
+06-11-2021 11:10:34.222 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Initializing ProtocolHandler ["http-nio-1103"]
+06-11-2021 11:10:34.237 [restartedMain] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+06-11-2021 11:10:34.237 [restartedMain] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.53]
+06-11-2021 11:10:34.348 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+06-11-2021 11:10:34.348 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1682 ms
+06-11-2021 11:10:34.379 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Starting...
+06-11-2021 11:10:34.756 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource.getConnection - HikariPool-1 - Start completed.
+06-11-2021 11:10:34.771 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration.lambda$h2Console$0 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/projectdb'
+06-11-2021 11:10:34.947 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [name: default]
+06-11-2021 11:10:34.994 [restartedMain] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate ORM core version 5.4.32.Final
+06-11-2021 11:10:35.135 [restartedMain] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+06-11-2021 11:10:35.231 [restartedMain] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+06-11-2021 11:10:35.718 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator.initiateService - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+06-11-2021 11:10:35.718 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+06-11-2021 11:10:35.749 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+06-11-2021 11:10:36.281 [restartedMain] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration.getOrDeducePassword - 
+
+Using generated security password: 095e382a-0705-43a8-9fea-46c4b6dfd90b
+
+06-11-2021 11:10:36.372 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+06-11-2021 11:10:36.446 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain.<init> - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44ae6ae0, org.springframework.security.web.context.SecurityContextPersistenceFilter@16c06e5e, org.springframework.security.web.header.HeaderWriterFilter@237c1056, org.springframework.web.filter.CorsFilter@2dd00b8d, org.springframework.security.web.authentication.logout.LogoutFilter@6a29f807, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c655b19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3979d9e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47383eb, org.springframework.security.web.session.SessionManagementFilter@43ca6713, org.springframework.security.web.access.ExceptionTranslationFilter@746e71ce]
+06-11-2021 11:10:36.526 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+06-11-2021 11:10:36.636 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol.log - Starting ProtocolHandler ["http-nio-1103"]
+06-11-2021 11:10:36.667 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 1103 (http) with context path ''
+06-11-2021 11:10:36.761 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+06-11-2021 11:10:36.776 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+06-11-2021 11:10:36.807 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+06-11-2021 11:10:36.964 [restartedMain] INFO  c.h.m.l.LearnSpringApplication.logStarted - Started LearnSpringApplication in 6.26 seconds (JVM running for 7.896)
